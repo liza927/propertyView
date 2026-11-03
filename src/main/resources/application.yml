@@ -1,0 +1,20 @@
+server:
+  port: 8092
+  servlet:
+    context-path: /property-view
+
+spring:
+  application:
+    name: property-view
+  datasource:
+    url: jdbc:h2:mem:hotels;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+  jpa:
+    open-in-view: false
+    hibernate:
+      ddl-auto: none
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.yaml
+  jackson:
+    default-property-inclusion: non_nullspring.application.name=property-view
