@@ -1,0 +1,20 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-seed-hotel
+      author: property-view
+      changes:
+        - insert:
+            tableName: hotel
+            columns:
+              - column: { name: name, value: "DoubleTree by Hilton Minsk" }
+              - column: { name: description, value: "The DoubleTree by Hilton Hotel Minsk offers 193 luxurious rooms in the Belorussian capital and stunning views of Minsk city from the hotel's 20th floor ..." }
+              - column: { name: brand, value: "Hilton" }
+              - column: { name: house_number, valueNumeric: 9 }
+              - column: { name: street, value: "Pobediteley Avenue" }
+              - column: { name: city, value: "Minsk" }
+              - column: { name: country, value: "Belarus" }
+              - column: { name: post_code, value: "220004" }
+              - column: { name: phone, value: "+375 17 309-80-00" }
+              - column: { name: email, value: "doubletreeminsk.info@hilton.com" }
+              - column: { name: check_in, value: "14:00" }
+              - column: { name: check_out, value: "12:00" }
